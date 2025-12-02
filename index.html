@@ -1,4 +1,4 @@
-x.html<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -61,7 +61,7 @@ x.html<!DOCTYPE html>
         /* Contenedor de botones (Grid para mejor layout) */
         .button-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); /* Minwidth ajustado para 5 botones */
             gap: 20px;
         }
 
@@ -99,6 +99,9 @@ x.html<!DOCTYPE html>
         .tableau { background-color: #4682b4; }
         .tableau:hover { background-color: #3a6a93; }
 
+        .personales { background-color: #00bcd4; } /* Turquesa para el nuevo botón */
+        .personales:hover { background-color: #0097a7; }
+
         /* Media Query para pantallas muy pequeñas */
         @media (max-width: 500px) {
             .tool-button {
@@ -118,10 +121,11 @@ x.html<!DOCTYPE html>
         <p>Selecciona la herramienta para ver los proyectos y ejemplos en el repositorio de GitHub.</p>
 
         <div class="button-grid">
-            <a href="https://gustavobanegasok.github.io/infovis/rawgraphs/index.html" class="tool-button rawgraph" target="_blank">RawGraphs</a>
+            <a href="https://gustavobanegasok.github.io/infovis/rawgraphs/" class="tool-button rawgraph" target="_blank">RawGraphs (3 Gráficos)</a>
             <a href="https://gustavobanegasok.github.io/infovis/flourish/" class="tool-button flourish" target="_blank">Flourish</a>
             <a href="https://gustavobanegasok.github.io/infovis/datawrapper/" class="tool-button datawrapper" target="_blank">Datawrapper</a>
             <a href="https://gustavobanegasok.github.io/infovis/tableau/" class="tool-button tableau" target="_blank">Tableau</a>
+            <a href="https://gustavobanegasok.github.io/infovis/personales/" class="tool-button personales" target="_blank">TP Datos Personales</a>
         </div>
     </div>
 
