@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RawGraphs - Galería de Gráficos</title>
+    <title>RawGraphs - Gráficos Incrustados</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,7 +13,7 @@
             padding: 20px;
         }
         .gallery {
-            max-width: 800px;
+            max-width: 1000px; /* Ancho ampliado para los gráficos */
             margin: 0 auto;
             background-color: #fff;
             padding: 30px;
@@ -21,23 +21,24 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #ff6f61; /* Color RawGraphs */
+            color: #ff6f61;
             margin-bottom: 30px;
         }
-        .graph-list a {
-            display: block;
-            margin: 15px 0;
-            padding: 10px;
-            text-decoration: none;
+        h2 {
             color: #1a1a2e;
-            background-color: #ffeadc;
-            border: 1px solid #ff6f61;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ff6f61;
+            padding-bottom: 5px;
         }
-        .graph-list a:hover {
-            background-color: #ff6f61;
-            color: white;
+        /* Estilo para el contenedor del objeto */
+        .graph-object {
+            width: 100%;
+            height: auto;
+            min-height: 450px; /* Altura mínima para asegurar visibilidad */
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
         .back-button {
             margin-top: 30px;
@@ -47,18 +48,33 @@
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #3a6a93;
         }
     </style>
 </head>
 <body>
     <div class="gallery">
-        <h1>Galería de Gráficos RawGraphs</h1>
-        <div class="graph-list">
-            <a href="grafico1.svg">Gráfico 1: Título o Descripción del Gráfico</a>
-            <a href="grafico2.svg">Gráfico 2: Título o Descripción del Gráfico</a>
-            <a href="grafico3.svg">Gráfico 3: Título o Descripción del Gráfico</a>
-        </div>
-        <a href="../index.html" class="back-button">← Volver al Dashboard Principal</a>
+        <h1>📊 Gráficos RawGraphs Incrustados</h1>
+        
+        <h2>Gráfico 1</h2>
+        <object class="graph-object" data="./grafico1.svg" type="image/svg+xml">
+             Tu navegador no soporta SVG. Por favor, descarga el archivo: <a href="./grafico1.svg">grafico1.svg</a>
+        </object>
+
+        <h2>Gráfico 2</h2>
+        <object class="graph-object" data="./grafico2.svg" type="image/svg+xml">
+             Tu navegador no soporta SVG. Por favor, descarga el archivo: <a href="./grafico2.svg">grafico2.svg</a>
+        </object>
+        
+        <h2>Gráfico 3</h2>
+        <object class="graph-object" data="./grafico3.svg" type="image/svg+xml">
+             Tu navegador no soporta SVG. Por favor, descarga el archivo: <a href="./grafico3.svg">grafico3.svg</a>
+        </object>
+        
+        <a href="../../index.html" class="back-button">← Volver al Dashboard Principal</a>
     </div>
 </body>
 </html>
