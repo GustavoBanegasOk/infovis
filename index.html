@@ -61,7 +61,7 @@
        
         .button-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); /* Botones en múltiples columnas */
+            **grid-template-columns: 1fr; /* MODIFICADO: Fuerza una sola columna de ancho completo */**
             gap: 20px;
         }
 
@@ -114,19 +114,4 @@
 <body>
 
     <div class="container">
-        <h1>📊 Proyectos de Visualización de Datos</h1>
-        
-        <h2 id="course-name">(20252Q) DTS.003 - Data Science - Comisión: 2025</h2>
-        <h3 id="student-name">Alumno: Gustavo Ariel Banegas</h3>
-       
-        <div class="button-grid">
-            <a href="https://gustavobanegasok.github.io/infovis/rawgraphs/index.html" class="tool-button rawgraph" target="_blank">🛠️ RawGraphs</a>
-            <a href="https://gustavobanegasok.github.io/infovis/flourish/index.html" class="tool-button flourish" target="_blank">✨ Flourish</a>
-            <a href="https://gustavobanegasok.github.io/infovis/datawrapper/index.html" class="tool-button datawrapper" target="_blank">📰 Datawrapper</a>
-            <a href="https://gustavobanegasok.github.io/infovis/tableau/index.html" class="tool-button tableau" target="_blank">🖥️ Tableau</a>
-            <a href="https://gustavobanegasok.github.io/infovis/personales/index.html" class="tool-button personales" target="_blank">👤 TP Datos Personales</a>
-        </div>
-    </div>
-
-</body>
-</html>
+        <h1>📊 Proyectos de
