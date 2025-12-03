@@ -61,7 +61,7 @@
        
         .button-grid {
             display: grid;
-            **grid-template-columns: 1fr; /* Modificación para una columna única de ancho completo */**
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); /* Botones en múltiples columnas */
             gap: 20px;
         }
 
