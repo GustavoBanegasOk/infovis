@@ -26,16 +26,16 @@
             padding: 40px;
             border-radius: 12px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
-            max-width: 1000px;
+            max-width: 1000px; 
             width: 100%;
             margin-top: 50px;
             margin-bottom: 50px;
         }
 
-        
+       
         
         h1 {
-            color: #ff6f61;
+            color: #ff6f61; 
             margin-bottom: 5px;
             font-size: 2.2em;
         }
@@ -57,14 +57,16 @@
             font-size: 1.5em;
         }
 
-       
+        
 
         .graph-object {
-            width: 100%;
+            
+            width: 95%; 
             height: auto;
-            min-height: 450px; 
-            margin-bottom: 50px;
-            border: 1px solid #ddd; 
+            min-height: 1200px; 
+            display: block;             
+            margin: 30px auto 30px auto;             
+            border: 1px solid #ddd;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
             border-radius: 6px;
         }
@@ -98,21 +100,21 @@
         <p class="subtitle">Análisis y visualización de datos utilizando la herramienta RawGraphs.</p>
         
         <h2>Gráfico 1: Alluvial Diagram</h2>
-        <object class="graph-object" data="./grafico1.svg" type="image/svg+xml">
-              Tu navegador no soporta SVG. Por favor, descarga el archivo: <a href="./grafico1.svg">grafico1.svg</a>
+        <object class="graph-object" data="./alluvial_diagram.svg" type="image/svg+xml">
+              Tu navegador no soporta SVG o el archivo no se ha cargado correctamente.
         </object>
 
-        <h2>Gráfico 2: Circular Dendogram</h2>
+        <h2>Gráfico 2: Título Descriptivo</h2>
         <object class="graph-object" data="./circular_dendrogram.svg" type="image/svg+xml">
-              Tu navegador no soporta SVG. Por favor, descarga el archivo: <a href="./circular_dendrogram.svg">circular_dendrogram.svg</a>
+              Tu navegador no soporta SVG o el archivo no se ha cargado correctamente.
         </object>
         
-        <h2>Gráfico 3: Sunburst Diagram</h2>
+        <h2>Gráfico 3: Título Descriptivo</h2>
         <object class="graph-object" data="./sunburst_diagram.svg" type="image/svg+xml">
-              Tu navegador no soporta SVG. Por favor, descarga el archivo: <a href="./sunburst_diagram.svg">sunburst_diagram.svg</a>
+              Tu navegador no soporta SVG o el archivo no se ha cargado correctamente.
         </object>
         
-        <a href="../index.html" class="back-button">← Volver al Índice Principal</a>
-        </div>
+        <a href="#" class="back-button" onclick="history.back(); return false;">← Volver al Índice Principal</a>
+    </div>
 </body>
 </html>
